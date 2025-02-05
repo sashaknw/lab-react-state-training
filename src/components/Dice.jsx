@@ -24,7 +24,7 @@ export default function Dice() {
 
      setCurrImg(DiceImg); 
       setTimeout(() => {
-        clearInterval();
+        clearTimeout();
         setCurrInterval(null);
         setCurrImg(diceImages[Math.floor(Math.random() * 6)]);
       }, 1000); 
